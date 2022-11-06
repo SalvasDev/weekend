@@ -29,7 +29,7 @@
 
 .dropdown-menu.active li {
     margin-top: -1rem;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid gray;
     padding-bottom: 1rem;    
 
 }
@@ -55,12 +55,6 @@
   display: flex;
   margin-top: 0;
   
-    hr {
-        border: none;
-        border: 1px solid white;
-        margin-top: 0;
-        padding: 0;
-    }
   a:hover {
     color: $accent__color;
   }  

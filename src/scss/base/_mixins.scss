@@ -1,38 +1,38 @@
 
 
 @mixin desk__1440 {
-    @media(min-width: 1440px) {
+    @media(max-width: 1440px) {
         @content;
     }
 }
 
 @mixin desk__1200 {
-    @media(min-width: 1200px) {
+    @media(max-width: 1200px) {
         @content;
     }
 }
 
-@mixin desk__1024 {
-    @media(min-width: 1024px) {
+@mixin desk__1080 {
+    @media(max-width: 1080px) {
         @content;
     }
 }
 
 @mixin tablet__768 {
-    @media(min-width: 768px) {
+    @media(max-width: 768px) {
         @content;
     }
 }
 
 
 @mixin mob__490 {
-    @media(min-width: 490px) {
+    @media(max-width: 490px) {
         @content;
     }
 }
 
 @mixin mob__375 {
-    @media(min-width: 375px) {
+    @media(max-width: 375px) {
         @content;
     }
 
