@@ -64,5 +64,11 @@
         width: 3.6rem;
     }
 
+    &:hover {
+        color: $gray__color;
+        border-color: $gray__color;        
+    }
+
+
 }
 

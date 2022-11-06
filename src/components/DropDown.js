@@ -1,23 +1,32 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import MenuContext from '../context/MenuContext'
 
-const DropDown = ({open}) => {
+
+const DropDown = ({id}) => {
+
+const { open } = useContext(MenuContext)
+
+var {  menuActive, menuActual} = open
+
 
 function DropdownItem() {
 
   return(
     <li className="dropdownItem"> 
-    <a href="">Lorem ipsum</a>
+     <a href="">Lorem Ipsum</a>
     </li>
   )
 }
 
+
+
 return (
-    <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`}>
+    <ul className={`dropdown-menu ${ menuActual === id && menuActive ? 'active' : 'inactive'}`}>
       <DropdownItem />
       <DropdownItem />
       <DropdownItem />
       <DropdownItem />
-    </div>
+    </ul>
   )
 }
 
