@@ -1,11 +1,18 @@
 import React from 'react'
+import About from './components/About';
+import Banner from './components/Banner';
+import Header from './components/Header';
+import Servicios from './components/Servicios';
 
-function WkndApp() {
+function Wknd() {
   return (
-    <div className="App">
-      <h1>Aquí empieza Wknd</h1>
+    <div className="container">  
+      <Header />
+      <Servicios />
+      <Banner />
+      <About />
     </div>
   );
 }
 
-export default WkndApp;
+export default Wknd;

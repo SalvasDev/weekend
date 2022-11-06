@@ -1,0 +1,56 @@
+.menu__container {
+    height: 100%;
+    margin-right: 0;
+    margin-left: 10%;
+    margin-top: 0rem;
+    position: absolute;
+    opacity: .9;
+    width: 90%;
+    position: fixed;
+    background-color: $purple__color;
+    z-index: 110;
+
+
+}
+
+.burger__menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+    row-gap: 4rem;
+    margin-left: 7rem;
+
+    @include tablet__768 {
+        margin-left: 40%;
+    }
+
+
+    a {
+        color: $white__color;
+        font-family: $font__prin;
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+}
+
+.material-symbols-rounded {
+    display: block;
+    position: fixed;
+    margin: 1.5rem auto 0 75%;
+    color: $white__color;
+    font-size: 3rem;
+
+    @include tablet__768 {
+        margin-left: 83%;
+    }
+
+    font-variation-settings: 'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.close__button {
+    cursor: pointer;
+}

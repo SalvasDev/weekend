@@ -1,0 +1,38 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font__prin;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow: scroll;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+    font-family: $font__prin;
+}
+
+li {
+    list-style: none;
+}

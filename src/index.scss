@@ -1,0 +1,21 @@
+
+@import 'scss/base/normalize';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'scss/base/variables';
+@import 'scss/base/mixins';
+@import 'scss/base/globales';
+@import './wknd.scss';
+
+// Layout styles
+@import 'scss/layout/header';
+@import 'scss/layout/hero';
+@import 'scss/layout/servicios';
+@import 'scss/layout/banner.scss';
+@import 'scss/layout/about.scss';
+@import 'scss/layout/sliderSwiper.scss';
+@import 'scss/layout/card.scss';
+@import 'scss/layout/dropDown.scss';
+
+
+// @import 'scss/layout/footer';

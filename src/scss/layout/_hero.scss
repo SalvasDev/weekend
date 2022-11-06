@@ -1,0 +1,26 @@
+
+.hero__section {
+    position: relative;
+
+    .hero__img {
+        width: 100%;
+        z-index: 0;
+    }
+
+    .hero__title {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        bottom: 9rem;
+        left: 6.3rem;
+        letter-spacing: -2%;
+        z-index: 2;
+        font-weight: 800;
+        font-size: 9.6rem;
+        line-height: 82%;
+        opacity: .7;
+
+    }
+
+
+}

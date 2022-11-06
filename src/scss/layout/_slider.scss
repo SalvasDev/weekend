@@ -1,0 +1,35 @@
+.group__cards {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(434px, 1fr));
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    margin: 9rem auto 0 auto;
+    align-items: center; 
+    padding: 0 4.8rem;
+    overflow: hidden;
+        
+}
+
+.buttons {
+    display: flex;
+    gap: 2.6rem;
+    margin: 7rem auto 0 auto;
+    justify-content: center;
+}
+
+.btn__slider {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: $gray__color;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $gral__color;
+    }
+
+
+}
+
+
