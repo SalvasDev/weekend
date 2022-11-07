@@ -18,37 +18,31 @@
         letter-spacing: -2%;
         z-index: 2;
         font-weight: 800;
-        font-size: 9.6rem;
         line-height: 82%;
         opacity: .7;
+        font-size: calc(30px + (96 - 30) * ((100vw - 375px) / (1440 - 300)));
 
         @include desk__1200 {
-            font-size: 7.2rem;
-            bottom: 3rem;
+            bottom: 7rem;
         }
 
         @include desk__1080 {
-            font-size: 6rem;
-            bottom: 3rem;
+            bottom: 5rem;
         }
 
         @include tablet__768 {
-            font-size: 5rem;
+            bottom: 3rem;
+        }
+
+        @include mob__490 {
+            bottom: 1rem;
             text-align: center;
-            bottom: 2rem;
-            transform: translateX(40%);
+            left: 25%;
         }
 
-        @include mob__490 {
-            font-size: 4rem;
+        @include mob__375 {
             bottom: .5rem;
-            transform: translateX(25%);
-        }
-
-        @include mob__490 {
-            font-size: 3rem;
-            bottom: .5rem;
-            transform: translateX(20%);
+            left: 23%;
         }
     }
 

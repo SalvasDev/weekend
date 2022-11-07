@@ -8,6 +8,14 @@
     margin: 54rem auto 0 auto;
     overflow: hidden;
 
+    @include tablet__768 {
+        width: 95%;
+    }
+
+    @include mob__490 {
+        margin-top: 30rem;
+    }
+
     .stars {
         display: flex;
         gap: 1rem;
@@ -17,12 +25,14 @@
     .about__title {
         margin: 2rem auto 0 auto;
         font-size: 3.2rem;
+        text-align: center;
     }
 
     .about__subtitle {
         margin: 2rem auto 5.4rem auto;
         font-size: 1.6rem;
         font-weight: $light;
+        text-align: center;
     }
     
 }

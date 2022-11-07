@@ -18,24 +18,55 @@
     border-radius: 12px;
     z-index: 6;
 
+    @include desk__1200 {
+        grid-template-columns: 40% 55% 3%;
+    }
+
+
+    @include desk__1080 {
+        grid-template-columns: 30% 60% 3%;
+    }
+
+
+    @include tablet__768 {        
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+
     .banner__title {     
         display: flex;
         flex-direction: column;
         font-family: $font__sec;
-        font-size: 14.5rem;
+        // font-size: 14.5rem;
+        font-size: calc(60px + (145 - 60) * ((100vw - 375px) / (1440 - 375)));
         font-weight: $extrabold;
-        line-height: 12.47rem;
+        line-height: calc(60px + (145 - 60) * ((100vw - 375px) / (1440 - 375)));
         letter-spacing: -6%;
         margin-top: 5.7rem;
         margin-left: 6.8rem;
         z-index: 15;
+
+        @include tablet__768 {
+            line-height: 6.5rem;
+            margin-left: 4rem;
+        }
     }
 
     .walle {     
-        height: 50rem;  
+        height: 80%;
+        max-width: 100%; 
          margin-left: -15rem;
         margin-top: 5.7rem;
         z-index: 5;
+
+        @include tablet__768 {
+            margin: -14rem auto 0 auto;
+            max-width: 100%;
+            height: 100%;
+        }
     }
 
     .phrase__group {
@@ -44,7 +75,21 @@
         align-items: right;
         margin-left: -30rem;
         margin-top: 5.7rem;
-        gap: 10rem;
+        gap: 5rem;
+
+        @include tablet__768 {
+            margin: -16rem 6rem 0 auto;
+            flex-direction: column-reverse;
+            gap: 2rem;
+        }
+
+        @include mob__490 {
+            margin: -16rem auto 0 auto;
+            width: 95%;
+            
+        }
+
+
     }
 
     .banner__subtitle {
@@ -52,20 +97,30 @@
         flex-direction: column;
         font-family: $font__sec;
         font-weight: $extrabold;    
-        font-size: 9.6rem;
+        // font-size: 9.6rem;
+        font-size: calc(60px + (96 - 60) * ((100vw - 375px) / (1440 - 375)));
         text-align: right;
         color: $accent__color;
-        line-height: 70.56px;
+        line-height: calc(50px + (80 - 50) * ((100vw - 375px) / (1440 - 375)));
         letter-spacing: -6%;
         margin-top: 0;
         margin-left: -30rem;
         margin-bottom: 0;
+
+        @include mob__490 {
+            margin-right: 2rem;
+            margin-bottom: 3rem;
+        }
     }
 
     .waves {
        width: 34.4rem;
        filter: brightness(0) saturate(100%) invert(16%) sepia(34%) saturate(1999%) hue-rotate(180deg) brightness(93%) contrast(96%);
        z-index: 0;
+
+        @include tablet__768 {
+            margin-top: 0;
+        }
     }
 
 }

@@ -7,20 +7,44 @@
 
     .servicios__first {
         margin-left: 10.5rem;
+        
+        @include mob__490 {
+            position: relative;
+            display: inline-block;
+            margin-inline: auto;
+            text-align: center;
+        }
     }
 
     .servicios__title,
     .servicios__title2 {
         font-family: $font__sec;
         font-weight: $extrabold;
-        font-size: 9.6rem;
+        font-size: calc(60px + (96 - 60) * ((100vw - 375px) / (1440 - 300)));
         letter-spacing: -4%;
         line-height: 84.48px;
         margin-bottom: 2rem;
+
+        @include mob__490 {
+            display: inline-block;
+            text-align: center;
+            line-height: 64px;
+        }
     }
 
     .servicios__title2 {
         margin-top: 0;
+
+        @include tablet__768 {
+                margin-top: 5rem;
+            }
+
+        @include mob__490 {            
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 95%;
+        }    
     }
 
     .servicios__text {
@@ -29,6 +53,22 @@
         font-weight: $light;
         line-height: 2.9rem;
         width: 30%;
+
+
+        @include tablet__768 {
+            width: 50%;
+        }
+
+
+        @include mob__490 {
+            position: relative;
+            display: inline-block;
+            width: 80%;
+            font-size: 2rem;
+            margin: 1rem auto;
+            text-align: center;
+            
+        }
         
     }
 
@@ -38,6 +78,23 @@
         right: 10rem;
         z-index: 3;
 
+
+        @include tablet__768 {
+            width: 100%;
+            position: relative;
+            margin-left: 14rem;           
+            margin-right: auto;
+        }
+
+        @include mob__490 {
+            top: 5rem;
+            width: 95%;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+
     }
   
 
@@ -45,7 +102,12 @@
        display: flex; 
        gap: 2rem;
        width: 80%;
-       
+
+        @include mob__490 {
+            position: relative;
+            margin: 2rem auto;
+        }
+    
     }
 
     .servicios__text2,
@@ -54,6 +116,12 @@
         font-size: 2.4rem;
         font-weight: $light;
         line-height: 2.9rem;
+
+        @include mob__490 {
+            width: 100%;
+            font-size: 2rem;
+        }
+
     }
 
     .curve {
@@ -62,6 +130,32 @@
         left: 30%;
         transform: translateY(-22%);
         z-index: 0;
+
+        @include desk__1080 {
+            opacity: .2;
+        }
+
+        
+        @include tablet__768 {
+            transform: translateY(-35%);
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        @media (max-with: 650px) {
+            transform: translateY(-15%);        
+        }
+
+
+        @include mob__490 {
+         top: 25%;
+           
+        }
+
+
+
     }
 
 }
