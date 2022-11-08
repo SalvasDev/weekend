@@ -1,15 +1,24 @@
-import React, { useContext, useEffect, useRef } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import MenuContext from '../context/MenuContext'
 import Hero from './Hero'
 import logo from '../img/logo.svg'
 import arrow from '../img/arrow.svg'
 import account_circle from '../img/account_circle.svg'
 import DropDown from './DropDown'
+import SideMenu from './SideMenu'
 
 const Header = () => {
 
   const { open, setOpen } = useContext(MenuContext)
+ const [activemenu, setActiveMenu] = useState(false)
 
+  const handleMenu = (e) => {
+      e.preventDefault()
+      setActiveMenu(true)
+  }
+  
+  
+  
   let menuRef = useRef()
 
   useEffect(()=> {
@@ -43,12 +52,13 @@ const Header = () => {
 
   return (
     <div className="header__container">
+     {activemenu && <SideMenu setActiveMenu={setActiveMenu} />}
       <div className="header__bar">
           <img className="header__logo" src={logo} alt="logotype" />
 
 
         {/* <!-- burger menu -->      */}
-        <div class="container__menu" id="container-menu">
+        <div onClick={e => handleMenu(e)} class="container__menu" id="container-menu">
           <button className="btn-burg" id="btn-burg">
             <div className="line1__btn-burg"></div>
             <div className="line2__btn-burg"></div>
@@ -56,15 +66,7 @@ const Header = () => {
           </button>
         </div>
         
-         {/* <!-- Menu mobile -->           */}
-        <nav className="showMenuMobile" id='showMenuMobile'>
-          <a  href='index.html'>Home</a>
-          <a  href="#proj">Projects</a>
-          <a  href="#abt">About</a>
-        </nav>
-
-
-          <nav className="nav__bar" ref={menuRef}>
+           <nav className="nav__bar" ref={menuRef}>
               <ul>
                 <li  onClick={e =>{hadleClick(e, 1)}} >Galería <img src={arrow} alt="arrowdown" /> <DropDown open = {open} id = {1} /></li>
                                 

@@ -113,19 +113,42 @@
 
 
 
-.container__menu {
-    display: none;
 
-    @include tablet__768 {
-        display: block;
-        color: white;
-    }
-}
 
-.showMenuMobile {
-    display: none;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .container__menu {
+//     display: none;
+
+//     @include tablet__768 {
+//         display: block;
+//         color: white;
+//     }
+// }
+
+// .showMenuMobile {
+//     display: none;
+
+// }
 
 
 
@@ -177,17 +200,17 @@
 }
 
 
-.visible {
-    display: flex;
+// .visible {
+//     display: flex;
 
-    @include tablet__768 {
-        display: block;
-    }
+//     @include tablet__768 {
+//         display: block;
+//     }
 
-    @include mob__375 {
-        display: flex;
-    }
-}
+//     @include mob__375 {
+//         display: flex;
+//     }
+// }
 
 
 .activeline1__btn-burg {
@@ -224,66 +247,66 @@
     }
 }
 
-.showMenuMobile {
-    display: none;
-    position: absolute;
-    text-decoration: none;
-    top: 18%;
-    right: 15%;
-    flex-direction: column;
-    position: fixed;
-    text-align: left;
-    gap: 6rem;
-    transition: all 2000ms;
-    z-index: 2;
+// .showMenuMobile {
+//     display: none;
+//     position: absolute;
+//     text-decoration: none;
+//     top: 18%;
+//     right: 15%;
+//     flex-direction: column;
+//     position: fixed;
+//     text-align: left;
+//     gap: 6rem;
+//     transition: all 2000ms;
+//     z-index: 2;
 
 
-    @include mob__375 {
-        top: 18%;
-        right: 40%;
-    }
-}
+//     @include mob__375 {
+//         top: 18%;
+//         right: 40%;
+//     }
+// }
 
-.showMenuMobile a {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    font-family: $font__sec;
-    font-weight: 300;
-    font-size: 2.4rem;
+// .showMenuMobile a {
+//     position: relative;
+//     text-decoration: none;
+//     color: white;
+//     font-family: $font__sec;
+//     font-weight: 300;
+//     font-size: 2.4rem;
 
-    @include mob__375 {
-        font-size: 1.8rem;
-    }
-}
+//     @include mob__375 {
+//         font-size: 1.8rem;
+//     }
+// }
 
-.showMenuMobile a:before {
-    content: '';
-    width: 0;
-    height: 2px;
-    position: absolute;
-    top: 3rem;
-    left: 0;
-    background-color: $gral__color;
-    transition: all 300ms;
-    transform-origin: left;
-}
+// .showMenuMobile a:before {
+//     content: '';
+//     width: 0;
+//     height: 2px;
+//     position: absolute;
+//     top: 3rem;
+//     left: 0;
+//     background-color: $gral__color;
+//     transition: all 300ms;
+//     transform-origin: left;
+// }
 
-.showMenuMobile a:hover:before {
-    width: 100%;
-    left: 0%;
-}
+// .showMenuMobile a:hover:before {
+//     width: 100%;
+//     left: 0%;
+// }
 
-.active__menu {
-    display: flex;
-    z-index: 100;
-}
+// .active__menu {
+//     display: flex;
+//     z-index: 100;
+// }
 
-.block__scroll {
-    overflow: hidden;
+// .block__scroll {
+//     overflow: hidden;
 
-    @include mob__375 {
-        overflow: hidden;
-    }
+//     @include mob__375 {
+//         overflow: hidden;
+//     }
 
-}
+// }
