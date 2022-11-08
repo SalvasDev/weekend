@@ -10,18 +10,20 @@
     justify-content: center;    
     box-sizing: border-box;
     gap: 2rem;
-    
-            
-
+               
     .container {
-        height: fit-content;
+        // height: fit-content;
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 2.5rem;
+
+        @include mob__375 {
+            gap: 3rem;
+        }
   
         .swiperContainer {
             overflow-x: hidden;
-            margin-top: 25px;
+            margin-top: 2.5rem;
             padding: 0 2rem;
             
         }

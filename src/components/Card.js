@@ -1,7 +1,7 @@
 import React from 'react'
 import picture from '../img/picture-profile.png'
 
-const Card = ({ name, description, id }) => {
+const Card = ({ name, description }) => {
 
 
   return (

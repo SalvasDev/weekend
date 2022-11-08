@@ -1,14 +1,21 @@
 .card {
-  width: 434px;
+  max-width: 43.4rem;
   height: 30.5rem;  
   background-color: $sec__color;
   padding: 6rem 5.4rem;
-  border-radius: 16px;
+  border-radius: .6rem;
 
-  @media (max-width: 350px) {
-    width: 340px;
-       flex-direction: column;
+  @include tablet__768 {
+      height: auto;
+      padding-right: 2rem;
+      min-width: 32rem;
+  }
+
+  @media (max-width: 375px) {
+         max-width: 70%;
+        flex-direction: column;
         gap: 10px;
+
       }
 }
 
@@ -34,68 +41,3 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-// .card {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   background-color: black;
-//   padding: 2rem 0;
-//   border-radius: 8px;
-//   min-width: 150px;
-//   width: 60vw;
-//   max-width: 275px;
-//   height: 275px;
-
-//   img {
-//     width: 70%;
-//     max-width: 150px;
-//   }
-
-//   .data {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 10px;
-
-//     p {
-//       font-weight: bold;
-//       text-transform: capitalize;
-//       text-align: center;
-//     }
-
-//     .types {
-//       display: flex;
-//       text-align: center;
-//       gap: 25px;
-
-//       span {
-//         padding: 0.5rem;
-//         background-color: white;
-//         border-radius: 8px;
-//         text-transform: capitalize;
-//       }
-//     }
-
-//     @media (max-width: 350px) {
-//       .types {
-//         flex-direction: column;
-//         gap: 10px;
-//       }
-//     }
-//   }
-// }
-
-// .card:hover {
-//   transition-duration: 0.3s;
-//   transform: scale(1.1);
-// }

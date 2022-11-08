@@ -14,7 +14,7 @@ const cards = [ 1, 2, 3, 4, 5, 6, 7 ]
           <Swiper
             modules={[Autoplay, Pagination]}
             autoplay={{
-              delay: 2000,
+              delay: 3000,
               disableOnInteraction: false
             }}
             pagination={{
@@ -27,26 +27,28 @@ const cards = [ 1, 2, 3, 4, 5, 6, 7 ]
                 slidesPerView: 1,
                 spaceBetween: 25,
               },
-              "@0.50": {
-                slidesPerView: 1.25,
-                spaceBetween: 25,
+              
+               "@0.50": {
+                slidesPerView: 1.15,
+                spaceBetween: 20,
               },
+
               "@1.00": {
                 slidesPerView: 2,
                 spaceBetween: 25,
               },
+             
               "@1.25": {
                 slidesPerView: 2.5,
                 spaceBetween: 20,
               },
+
+                       
               "@1.50": {
                 slidesPerView: 3,
                 spaceBetween: 30,
               },
-              "@1.75": {
-                slidesPerView: 4,
-                spaceBetween: 20,
-              },
+ 
             }}
           >
              {cards.map(img => {
