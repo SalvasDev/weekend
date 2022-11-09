@@ -5,6 +5,8 @@ const Servicios = () => {
   return (
     <section className="servicios__section">
 
+      <div className="gradient"></div>
+      
       <div className="servicios__first">
           <h2 className="servicios__title">Lorem <br/>ipsum</h2>
           <p className="servicios__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</p>  
