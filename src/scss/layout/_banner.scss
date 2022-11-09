@@ -2,8 +2,12 @@
     background-color: transparent;
     width: 100%;
     height: 745px;
-    margin-top: -90rem;
+    margin-top: -80rem;
     overflow: hidden;
+
+    @include mob__490 {
+       margin-top: -90rem;    
+    }
 }
 
 .banner__container {

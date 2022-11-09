@@ -54,6 +54,7 @@
         font-size: 1.8rem;
         font-family: $font__prin;
         font-weight: $regular;
+        white-space: nowrap;
         cursor: pointer;
 
         &:hover {
@@ -111,7 +112,7 @@
 
 .container__menu {
     display: none;
-    
+
     @include tablet__768 {
             display: flex;
         }
