@@ -15,6 +15,8 @@ const Header = () => {
   const handleMenu = (e) => {
       e.preventDefault()
       setActiveMenu(true)
+      // bodyControl.classList.toggle('block__scroll');
+
   }
   
   

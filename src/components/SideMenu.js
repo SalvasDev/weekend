@@ -7,6 +7,8 @@ const SideMenu = ({ setActiveMenu }) => {
     const handleClick = e => {
         e.preventDefault()
         setActiveMenu(false)
+        var contMenu = document.querySelector('.container__menu')
+        contMenu.classList.display = 'none'
     }
 
     return (
