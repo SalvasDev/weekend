@@ -18,6 +18,13 @@
     }
 }
 
+
+@mixin desk__900 {
+    @media(max-width: 900px) {
+        @content;
+    }
+}
+
 @mixin tablet__768 {
     @media(max-width: 768px) {
         @content;

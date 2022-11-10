@@ -8,6 +8,8 @@
     background-color: $back__color;
     z-index: 10;
     overflow: hidden;
+    transition: all 0.4s;
+
 }
 
 .burger__menu {

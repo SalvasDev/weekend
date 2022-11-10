@@ -14,7 +14,9 @@ const Header = () => {
 
   const handleMenu = (e) => {
       e.preventDefault()
-      setActiveMenu(true)
+      // const menuMobil = document.querySelector('.container__menu')
+      // menuMobil.classList.maxHeight= '100%';
+      setActiveMenu(true)    
   }
   
   
@@ -58,7 +60,7 @@ const Header = () => {
 
 
         {/* <!-- burger menu -->      */}
-        <div onClick={e => handleMenu(e)} class="container__menu" id="container-menu">
+        <div onClick={e => handleMenu(e)} className="container__menu" id="container-menu">
           <button className="btn-burg" id="btn-burg">
             <div className="line1__btn-burg"></div>
             <div className="line2__btn-burg"></div>

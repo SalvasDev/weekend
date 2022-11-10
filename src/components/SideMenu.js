@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import close from '../img/close.svg'
 
 
 const SideMenu = ({ setActiveMenu }) => {
+
 
     const handleClick = e => {
         e.preventDefault()

@@ -15,8 +15,8 @@
         @include desk__1440 {
              padding: 0 4rem;
         }
-
-        @include tablet__768 {
+   
+        @include desk__900 {
             padding: 0 2rem;
         }
 
@@ -35,6 +35,10 @@
 .nav__bar  {
     flex-basis: 58rem;
     padding: 0 4rem;
+
+    @include desk__900 {
+            padding: 0 2rem;
+    }
 
     @include tablet__768 {
         display: none;
@@ -60,6 +64,11 @@
         &:hover {
             color: $accent__color;
         }
+        
+        @include desk__900{
+            font-size: 1.6rem;
+        }
+
     }
 }
 
@@ -127,7 +136,7 @@
     height: 3rem;
     border: 0;
     background: transparent;
-    gap: .4rem;
+    gap: .6rem;
     cursor: pointer;    
     display: none;
 
