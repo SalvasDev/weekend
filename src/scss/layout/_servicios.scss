@@ -152,7 +152,7 @@
         position: absolute;
         height: 236.8rem;
         left: 30%;
-        top: -8%;
+        top: -22%;
         z-index: 0;
 
         @include desk__1080 {
@@ -161,6 +161,7 @@
 
         
         @include tablet__768 {
+            top: -10rem;
             left: 0;
             right: 0;
         }
@@ -171,7 +172,7 @@
 
 
         @include mob__490 {
-            transform: translateY(-1%);
+            transform: translateY(1%);
            
         }
 

@@ -1,9 +1,10 @@
 .container {
+    position: relative;
     width: min(95%, 1440px);
-    height: 380rem;
+    height: 120%;
+    padding-bottom: 5rem;
     margin-inline: auto;
     background-color: $back__color; 
-    position: relative;
        
 }
 
