@@ -6,12 +6,15 @@ const Banner = () => {
   return (
     <section className="banner__section">
       <div className="banner__container">
+        
         <h3 className="banner__title">
             <span>Your</span>
             <span>vacation</span>
             <span>is here</span>
         </h3>
+        
         <img className="walle" src={walle} alt="" />
+
       <div className="phrase__group">
         <h3 className="banner__subtitle">
             <span>Ready</span>
@@ -19,7 +22,8 @@ const Banner = () => {
             <span>sail</span>
         </h3>
         <img className="waves" src={waves} alt="" />
-      </div>    
+      </div> 
+         
     </div>
   
     </section>
